@@ -4,7 +4,7 @@ import sys
 import os
 import stashy
  
-stash = stashy.connect("http://stash.loyal3.net", "user", "password")
+stash = stashy.connect("http://url", "user", "password")
 
 for projects in stash.projects.list():
     print("project name is %s" % projects["key"])
